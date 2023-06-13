@@ -1,0 +1,19 @@
+--trusted-host pypi.org
+--trusted-host pypi.python.org
+--trusted-host files.pythonhosted.org
+netmiko==3.4.0
+requests==2.27.1
+tabulate==0.8.10
+virtualenv==20.16.5
+pandas==1.1.5
+urllib3==1.26.4
+viptela==0.3.9
+numpy==1.19.5
+textfsm==1.1.2
+cryptography==38.0.1
+fernet==1.0.1
+bs4
+openpyxl
+flask
+jinja2
+jason
