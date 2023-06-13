@@ -1,0 +1,17 @@
+Value VPN (\S+)
+Value INTERFACE (\S+)
+Value ADDRESS (\d+\.\d+\.\d+\.\d+)
+Value MAC (\S+)
+Value STATE (\S+)
+Value TIMER (\S+)
+Value UPTIME (\S+)
+
+
+Start
+  ^VPN\s+IF\s+NAME\s+IP\s+Age\s+MAC\s+STATE\s+IDLE\s+TIMER\s+UPTIME -> Start_record
+
+Start_record
+  ^${VPN}\s+${INTERFACE}\s+${ADDRESS}\s+${MAC}\s+${STATE}\s+${TIMER}\s+${UPTIME} -> Record
+  ^\s+$$
+  ^$$
+  ^.* -> Error "LINE NOT FOUND"

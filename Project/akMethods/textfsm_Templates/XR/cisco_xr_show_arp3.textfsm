@@ -1,0 +1,15 @@
+Value Required VPN (\d+)
+Value Required INTERFACE (\S+)
+Value Required ADDRESS (\d+\.\d+\.\d+\.\d+)
+Value Required MAC (\S+)
+Value Required STATE (\S+)
+Value Required TYPE (\S+)
+Value Required UPTIME (\S+)
+
+Start
+  # Match the timestamp at beginning of command output
+  ^\S+\s+\S+\s+\d+\s+\d+:\d+:\d+\.\d+\s+\S+\s*$$
+  ^VPN\s+IF\s+NAME\s+IP\s+MAC\s+STATE\s+IDLE\s+TIMER\s+UPTIME$$
+  ^-+
+  ^${VPN}\s+${INTERFACE}\s+${ADDRESS}\s+${MAC}\s+${STATE}\s+${TIMER}\s+${UPTIME}\s*$$ -> Record
+  ^. -> Error
