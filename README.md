@@ -1,20 +1,20 @@
-# NOC3
+# ST
 Network Support Automation
 
-Link to this repo: https://gheprod.corp.costco.com/akayat/NOC3.git
+Link to this repo: https://gheprod.corp.costco.com/akayat/ST.git
 
 To clone it to your jumpbox, while at your jumpbox home directory:
 - cd        (to be in home directory)
-- git clone https://gheprod.corp.costco.com/akayat/NOC3.git
-- cd NOC3
+- git clone https://gheprod.corp.costco.com/akayat/ST.git
+- cd ST
 - pip3 install -r requirements.txt --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org
 
 To run any script (ping.py for example):
-- cd NOC3
+- cd ST
 - python3 ping.py
 
 Make sure you allways have the latest updates by:
-- cd NOC3
+- cd ST
 - git pull origin main
 
 Current working scripts:
