@@ -1,6 +1,6 @@
 """
-Author: Abdul Kayat - c_akayat@costco.com
-Mar 2023
+Author: Abdul Kayat - a.alkhayyat@saudiatechnic.com
+Jan 2024
 
 Description:
 Find and list all APs for a specific site
